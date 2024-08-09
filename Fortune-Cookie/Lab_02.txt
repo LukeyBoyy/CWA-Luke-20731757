@@ -8,3 +8,9 @@
 
 //Exercise 3
 // docker run --rm -it --publish=80:3000 fortune-cookie
+
+
+//Exerise 4
+//  const currentDate = new Date();
+//  const formattedDate = currentDate.toLocaleString();
+//  res.send(formattedDate + message);
