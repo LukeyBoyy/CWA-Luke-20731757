@@ -6,11 +6,11 @@ const app = express();
 app.get('/', (req, res) => {
     const currentDate = new Date();
     const formattedDate = currentDate.toLocaleString();
-    
+
 
     child_process.exec('fortune', (error, message) => {
         if(error === null) {
-            res.send(formattedDate + message);
+            res.send(formattedDate + ' '+ 'your fortune is: ' + message);
         } else{
             res.send('Error: ' + error);
         } 
