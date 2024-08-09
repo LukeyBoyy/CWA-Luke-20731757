@@ -5,3 +5,6 @@
 // Exercise 2
 // When nslookup Amazon, it presents 3 different IP addresses. 
 // Amazon would need multiple IP addresses because of there high traffic which would occur all the time, by having multiple IP's, they are able to do load balacing which enables there websites to run as fast as possible.
+
+//Exercise 3
+// docker run --rm -it --publish=80:3000 fortune-cookie
