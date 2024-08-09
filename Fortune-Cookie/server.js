@@ -1,13 +1,16 @@
 const express = require('express')
 const child_process = require('child_process');
-const { error } = require('console');
 
 const app = express();
 
 app.get('/', (req, res) => {
+    const currentDate = new Date();
+    const formattedDate = currentDate.toLocaleString();
+    
+
     child_process.exec('fortune', (error, message) => {
         if(error === null) {
-            res.send(message)
+            res.send(formattedDate + message);
         } else{
             res.send('Error: ' + error);
         } 
