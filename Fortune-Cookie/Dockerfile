@@ -14,7 +14,7 @@ RUN npm --silent install
 RUN mkdir /deps && mv node_modules /deps/node_modules
 
 ENV NODE_PATH=/deps/node_modules \
-    PATH=/deps/node_modules/.bin$PATH
+    PATH=/deps/node_modules/.bin:$PATH
 
 COPY . /app
 
@@ -23,4 +23,4 @@ USER node
 
 EXPOSE 3000
 
-CMD [ "npm", "start"]
+CMD [ "nodemon", "-L", "-x", "npm start"]
