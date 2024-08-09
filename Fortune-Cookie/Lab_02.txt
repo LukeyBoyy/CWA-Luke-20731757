@@ -14,3 +14,9 @@
 //  const currentDate = new Date();
 //  const formattedDate = currentDate.toLocaleString();
 //  res.send(formattedDate + message);
+
+//Exercise 5
+// volumes:
+//         - ".:/app"
+//         - "/etc/localtime:/etc/localtime:ro"
+
