@@ -1,0 +1,3 @@
+// Exercise 1
+// When I create hello-world as a container without specifying the name, it creates the name 'youthful_noyce' as the name in the docker.
+// Removing the container using it's ID '33fc1dfa784f95da9e72e374a22514cf1064621112ed73b3ede0c79661bb925e' works, rather than using its name.
