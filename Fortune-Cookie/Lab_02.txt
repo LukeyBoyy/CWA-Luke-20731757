@@ -2,3 +2,6 @@
 // When I create hello-world as a container without specifying the name, it creates the name 'youthful_noyce' as the name in the docker.
 // Removing the container using it's ID '33fc1dfa784f95da9e72e374a22514cf1064621112ed73b3ede0c79661bb925e' works, rather than using its name.
 
+// Exercise 2
+// When nslookup Amazon, it presents 3 different IP addresses. 
+// Amazon would need multiple IP addresses because of there high traffic which would occur all the time, by having multiple IP's, they are able to do load balacing which enables there websites to run as fast as possible.
