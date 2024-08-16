@@ -1,0 +1,21 @@
+Exercise 1 --
+When doing 'let' to a variable you are able to change the variable to another thing without using let.
+
+for example;
+let var1 =22
+var1 = 22
+
+then if i wanted to change the variable I could just do 
+var1 =25
+
+whereas
+
+When using 'const' to a variable, you are unable to change it after it has been assigned without using const again
+
+for example;
+const y = 44
+y = 44
+
+then if i tried to change it like this 
+y = 22
+it would not let me.
