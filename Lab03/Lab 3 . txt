@@ -44,7 +44,7 @@ console.log(person.introduce());
 
 Exercise 4 --
 let names = ['Alice', 'Bob', 'Cthulhu'];
-let greetings = names.map(name => 'Hello " + name + '!');
+let greetings = names.map(name => 'Hello ' + name + '!');
 console.log(greetings);
 
 Exercise 5 -- 
@@ -54,3 +54,11 @@ let maxNumber = myNumbers.reduce((max, current) => {
 }, myNumbers[0]);
 
 console.log(maxNumber);
+
+Exercise 6 --
+displayArray = (inputArray) => {
+    let itemArray = inputArray.map(item => `<li>${item}</li>`);
+    let oneString = itemArray.reduce((acc, curr) => acc + curr, '');
+    document.getElementById('cool-section').innerHTML =
+        '<ul>' + oneString + '</ul>';
+}
