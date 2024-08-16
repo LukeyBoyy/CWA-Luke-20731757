@@ -62,3 +62,8 @@ displayArray = (inputArray) => {
     document.getElementById('cool-section').innerHTML =
         '<ul>' + oneString + '</ul>';
 }
+
+Exercise 7 --
+let heroes = ['The Hulk', 'Wonder Woman', 'Batman'];
+let index = _.findIndex(heroes, hero => hero === 'Batman');
+console.log(index);
