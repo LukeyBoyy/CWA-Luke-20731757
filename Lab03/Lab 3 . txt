@@ -67,3 +67,46 @@ Exercise 7 --
 let heroes = ['The Hulk', 'Wonder Woman', 'Batman'];
 let index = _.findIndex(heroes, hero => hero === 'Batman');
 console.log(index);
+
+Exercise 8 --
+
+function createCircle(radius) {
+    return {
+        area: function() {
+            return Math.PI * radius * radius;
+        },
+        perimeter: function() {
+            return 2 * Math.PI * radius;
+        }
+    };
+}
+
+let circle = createCircle(4);
+console.log(circle.area());
+console.log(circle.perimeter());
+
+Exercise 9 --
+
+function createCircle(radius) {
+    return {
+        area: function() {
+            return Math.PI * radius * radius;
+        },
+        perimeter: function() {
+            return 2 * Math.PI * radius;
+        }
+    };
+}
+
+function createCircles(radii) {
+    return radii.map(radius => createCircle(radius));
+}
+
+let radiiArray = [1, 2, 3, 4, 5];
+let circlesArray = createCircles(radiiArray);
+
+circlesArray.forEach((circle, index) => {
+    console.log(`Circle ${index + 1}:`);
+    console.log(`  Area: ${circle.area()}`);
+    console.log(`  Perimeter: ${circle.perimeter()}`);
+});
