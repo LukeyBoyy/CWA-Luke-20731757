@@ -46,3 +46,11 @@ Exercise 4 --
 let names = ['Alice', 'Bob', 'Cthulhu'];
 let greetings = names.map(name => 'Hello " + name + '!');
 console.log(greetings);
+
+Exercise 5 -- 
+let myNumbers = [4, 7, 2];
+let maxNumber = myNumbers.reduce((max, current) => {
+    return Math.max(max, current);
+}, myNumbers[0]);
+
+console.log(maxNumber);
