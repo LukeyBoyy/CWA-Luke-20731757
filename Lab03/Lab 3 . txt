@@ -31,3 +31,13 @@ let resultArray = arr1.concat(arr2);
 let resultString = resultArray.join('');
 
 console.log(resultString);
+
+Exercise 3 --
+let person = {
+    name: "Luke",
+    introduce: function() {
+        return 'Hello, my name is ${this.name}
+    }
+};
+
+console.log(person.introduce());
